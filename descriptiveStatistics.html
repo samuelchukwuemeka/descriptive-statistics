@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106065945-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106065945-1');
+    </script>
+
+    <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta name="google-site-verification" content="dWWImG59lcpKRGrhVSEW_j8U2jW1vMTG1_J2dUBrF4s">
+    <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
+    <title>Descriptive Statistics Calculators</title>
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Samuel Chukwuemeka (SamDom4Peace) gives all the credit to our LORD and GOD, JESUS CHRIST. We are experts in descriptive statistics calculators.">
+    
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, math, 
+              mathematics, statistics, descriptive statistics, data, dataset, data vlaue, mean, median, mode, midrange, range, variance, 
+              standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
+              standard error, measures of center, summation, sum, sample size, population size, measures of central tendency, 
+              measures of dispersion, measures of spread, measures of variation, measures of variability, frequency,
+              measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
+              measures of relative standing, boxplots, truncated mean, range rule of thumb, Interquartile Range, Semi-interquartile Range, 
+              Midquartile, Lower Fence, Upper Fence, standard score, standardized score, usual data value, unusual data value">
+    <link href="styles/descriptiveStatistics.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar cornsilk w3-padding w3-card">
+            <a href="https://descriptive-statistics.appspot.com/" class="w3-bar-item w3-button">Descriptive Statistics</a>
+
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#quotes" class="w3-bar-item w3-button">Quotes</a>
+                <a href="#welcome" class="w3-bar-item w3-button">Welcome</a>
+                <a href="#measuresCenter" class="w3-bar-item w3-button">Measures of Center</a>
+                <a href="#measuresSpread" class="w3-bar-item w3-button">Measures of Spread</a>
+                <a href="#measuresPosition" class="w3-bar-item w3-button">Measures of Position</a>
+                <a href="https://www.chukwuemekasamuel.com/portfolios.html" target="_blank" class="w3-bar-item w3-button">Portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="w3-display-container w3-content w3-wide w3-padding-120" style="max-width:1600px;min-width:500px" id="quotes">
+        <div class="w3-center">
+            <button class="solutions" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+        <header class="quoteDay w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER
+                        in
+                        Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages8">Let everything that has breath praise the LORD! Praise the LORD. - Psalm 150:6</p>
+            <p><q>The Joy of a Teacher is the Success of his Students.</q> - Samuel Dominic Chukwuemeka</p>
+        </header>
+    </div>
+    <!-- End Header -->
+    
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1200px">
+
+        <!-- Welcome -->
+        <div class="w3-row w3-padding-64" id="welcome">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="images/chukwuemekasamuel.jpg" class="image" alt="Samuel Dominic Chukwuemeka" title="SamDom For Peace">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Descriptive Statistics Calculators</h1>
+                <p>
+                    <span id="greetings"></span> <br>
+                    I greet you this day, <script>document.write(new Date());</script> <br>
+                    <mark>These calculators are for vertical entries of data only</mark> <br>
+                    To use the calculators for horizontal data entries, please visit 
+                    <a href="https://descriptive-statistics.appspot.com/descriptive-statistics-calculators.html" target="_blank">Descriptive Statistics Calculators (Vertical data entries only)</a> <br>
+                    I wrote the codes for the calculators using JavaScript, a client-side scripting language. <br>
+                    Comments, questions, and constructive criticisms are welcome. You may contact me. <br>
+                    Thank you for visiting. <br>
+                    <b>Samuel Dominic Chukwuemeka</b> (SamDom For Peace) <br>
+                    <span style="font-size: large">B.Eng., A.A.T, M.Ed., M.S</span>
+                </p>
+            </div>
+        </div>
+        <!-- End Welcome -->
+
+        <hr>
+
+        <!-- Measures of Center -->
+        <div class="w3-row w3-padding-64" id="measuresCenter">
+
+            <h2>Measures of Center</h2>
+
+            <form id="measuresCentralTendency">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 1</mark> <br>
+                        <u>Given:</u> Raw Dataset, $X$ <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Mean, Median, Mode, Midrange <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetX"></label>
+                                <textarea name="datasetX" id="datasetX" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresCentralTendency()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>   
+                    
+                    <br>
+
+                    <table>
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataX"></label>
+                                <textarea name="sortedDataX" class="output" id="sortedDataX" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="sumDataX">$\Sigma x$ = </label><input type="text" class="middleG" name="sumDataX" id="sumDataX" readonly> <br><br>
+                        <label for="sampleSizeX">$n$ = </label><input type="text" name="sampleSizeX" id="sampleSizeX" readonly> <br><br>
+                        <label for="meanX">$\bar{x}$ = </label><input type="text" class="middleP" name="meanX" id="meanX" readonly> <br><br>
+                        <label for="medianX">$\tilde{x}$ = </label><input type="text" class="shortP" name="medianX" id="medianX" readonly> <br><br>
+                        <label for="modeX">$\widehat{x}$ = </label><input type="text" class="longP" name="modeX" id="modeX" readonly> <br>
+                        (<i>If the dataset is multimodal or has no mode, click inside and scroll all the way to the end as applicable</i>) <br><br>
+                        <label for="minimumX">$min$ = </label><input type="text" class="shortG" name="minimumX" id="minimumX" readonly> <br><br>
+                        <label for="maximumX">$max$ = </label><input type="text" class="shortG" name="maximumX" id="maximumX" readonly> <br><br>
+                        <label for="midrangeX">$x_{MR}$ = </label><input type="text" class="shortP" name="midrangeX" id="midrangeX" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="averageUngroupedDataset">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 2</mark> <br>
+                        <u>Given:</u> Ungrouped Dataset and Frequency <br>
+                        <u>To Calculate:</u> Mean <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Ungrouped Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetXU"></label>
+                                <textarea name="datasetXU" id="datasetXU" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="frequency1XU"></label>
+                                <textarea name="frequency1XU" id="frequency1XU" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="averageUngroupedDataset()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table class="w3-center">
+                        <caption>$f * x$</caption>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="productVariableFrequencyXU"></label>
+                                <textarea name="productVariableFrequencyXU" class="output" id="productVariableFrequencyXU" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <label for="summationProductVariableFrequencyXU">$\Sigma fx$ = </label><input type="text" class="middleG" name="summationProductVariableFrequencyXU" id="summationProductVariableFrequencyXU" readonly> <br><br>
+                        <label for="summationFrequencyXU">$\Sigma f$ = </label><input type="text" name="summationFrequencyXU" id="summationFrequencyXU" readonly> <br><br>
+                        <label for="meanXU">$\bar{x}$ = </label><input type="text" class="middleP" name="meanXU" id="meanXU" readonly> 
+                        <!--
+                        <br><br>
+                        <label for="medianXU">Median = </label><input type="text" class="shortP" name="medianXU" id="medianXU" readonly> <br><br>
+                        <label for="modeXU">Mode = </label><input type="text" class="longP" name="modeXU" id="modeXU" readonly> <br>
+                        (<i>If the dataset is multimodal or has no mode, click inside and scroll all the way to the end as applicable</i>) <br><br>
+                        <label for="minimumXU">Minimum = </label><input type="text" class="shortG" name="minimumXU" id="minimumXU" readonly> <br><br>
+                        <label for="maximumXU">Maximum = </label><input type="text" class="shortG" name="maximumXU" id="maximumXU" readonly> <br><br>
+                        <label for="midrangeXU">Midrange = </label><input type="text" class="shortP" name="midrangeXU" id="midrangeXU" readonly>
+                        -->
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="averageGroupedDataset">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 3</mark> <br>
+                        <u>Given:</u> Grouped Dataset (<i>Lower Class Limit and Upper Class Limit</i>) and Frequency <br>
+                        <u>To Calculate:</u> Mean <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Lower Class Limit, $LCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetXGlower"></label>
+                                <textarea name="datasetXGlower" class="wide" id="datasetXGlower" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Upper Class Limit, $UCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetXGupper"></label>
+                                <textarea name="datasetXGupper" class="wide" id="datasetXGupper" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="frequency1XG"></label>
+                                <textarea name="frequency1XG" class="wide" id="frequency1XG" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="averageGroupedDataset()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid}$ <br>
+                                <label for="midpointXG"></label>
+                                <textarea name="midpointXG" class="output" id="midpointXG" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f * x_{mid}$ <br>
+                                <label for="productMidpointFrequencyXG"></label>
+                                <textarea name="productMidpointFrequencyXG" class="output" id="productMidpointFrequencyXG" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="summationProductMidpointFrequencyXG">$\Sigma fx_{mid}$ = </label><input type="text" class="middleG" name="summationProductMidpointFrequencyXG" id="summationProductMidpointFrequencyXG" readonly> <br><br>
+                        <label for="summationFrequencyXG">$\Sigma f$ = </label><input type="text" name="summationFrequencyXG" id="summationFrequencyXG" readonly> <br><br>
+                        <label for="meanXG">$\bar{x}$ = </label><input type="text" class="middleP" name="meanXG" id="meanXG" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="meanGroupedDataset">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 4</mark> <br>
+                        <u>Given:</u> Grouped Dataset (<i>Lower Class Limit and Upper Class Limit</i>), Frequency, and Assumed Mean <br>
+                        <u>To Calculate:</u> Mean <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Lower Class Limit. $LCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetXGAMlower"></label>
+                                <textarea name="datasetXGAMlower" class="wide" id="datasetXGAMlower" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Upper Class Limit, $UCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetXGAMupper"></label>
+                                <textarea name="datasetXGAMupper" class="wide" id="datasetXGAMupper" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="frequency1XGAM"></label>
+                                <textarea name="frequency1XGAM" class="wide" id="frequency1XGAM" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="assumedMeanXGAM">Assumed Mean = </label><input type="text" class="shortB" name="assumedMeanXGAM" id="assumedMeanXGAM" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="meanGroupedDataset()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid}$ <br>
+                                <label for="midpointXGAM"></label>
+                                <textarea name="midpointXGAM" class="output" id="midpointXGAM" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $D = x_{mid} - AM$ <br>
+                                <label for="deviationXGAM"></label>
+                                <textarea name="deviationXGAM" class="output" id="deviationXGAM" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f * D$ <br>
+                                <label for="productFrequencyDeviationXGAM"></label>
+                                <textarea name="productFrequencyDeviationXGAM" class="output" id="productFrequencyDeviationXGAM" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="summationProductFrequencyDeviationXGAM">$\Sigma fD$ = </label><input type="text" class="middleG" name="summationProductFrequencyDeviationXGAM" id="summationProductFrequencyDeviationXGAM" readonly> <br><br>
+                        <label for="summationFrequencyXGAM">$\Sigma f$ = </label><input type="text" name="summationFrequencyXGAM" id="summationFrequencyXGAM" readonly> <br><br>
+                        <label for="meanXGAM">$\bar{x}$ = </label><input type="text" class="middleP" name="meanXGAM" id="meanXGAM" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="trimmedMeanUngroupedDataset">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 5</mark> <br>
+                        <u>Given:</u> Raw Dataset, Trim Percent <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Trimmed Mean <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetT"></label>
+                                <textarea name="datasetT" id="datasetT" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="percentTrim">Trim </label><input type="text" class="shortB" name="percentTrim" id="percentTrim" required>% from 
+                        the data
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="trimmedMeanUngroupedDataset()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataT"></label>
+                                <textarea name="sortedDataT" class="output" id="sortedDataT" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        This implies that <label for="numberTrim"></label><input type="text" class="shortG" name="numberTrim" id="numberTrim" readonly> 
+                        value(s) is/are trimmed from each end of the sorted data
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                Trimmed Data <br>
+                                <label for="trimmedData"></label>
+                                <textarea name="trimmedData" class="output" id="trimmedData" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumTrimmedData">Sum of Trimmed Data = </label><input type="text" class="middleG" name="sumTrimmedData" id="sumTrimmedData" readonly> <br><br>
+                        <label for="sampleSizeTrimmedData">Sample Size of Trimmed Data = </label><input type="text" class="shortG" name="sampleSizeTrimmedData" id="sampleSizeTrimmedData" readonly> <br><br>
+                        <label for="trimmedMean">Trimmed Mean = </label><input type="text" class="middleP" name="trimmedMean" id="trimmedMean" readonly>
+                    </p>
+                </div>
+            </form>
+            
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="assumedMeanDeviations">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 6</mark> <br>
+                        <u>Given:</u> Assumed Mean, Deviations from the Assumed Mean <br>
+                        <u>To Calculate:</u> Mean <br>
+                        Find the Dataset <br>
+                        Sort the Dataset <br>
+                        <u>To Calculate:</u> Median, Mode, Midrange <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="assumedMean1">Assumed Mean = </label><input type="text" class="shortB" name="assumedMean1" id="assumedMean1" required> <br><br>
+                    </p>
+            
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">$x - AM$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="deviationsAssumedMean1"></label>
+                                <textarea name="deviationsAssumedMean1" id="deviationsAssumedMean1" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+            
+                    <br>
+            
+                    <p>
+                        <button onclick="assumedMeanDeviations()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>    
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="sumDeviations1">$\Sigma D$ = </label><input type="text" class="middleG" name="sumDeviations1" id="sumDeviations1" readonly> <br><br>
+                        <label for="sampleSize1">$n$ = </label><input type="text" class="shortG" name="sampleSize1" id="sampleSize1" readonly> <br><br>
+                        <label for="mean1">$\bar{x}$ = </label><input type="text" class="middleP" name="mean1" id="mean1" readonly>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                Raw Data, $X$ <br>
+                                <label for="rawData1"></label>
+                                <textarea name="rawData1" class="output" id="rawData1" readonly></textarea>
+                            </td>
+                            <td class="w3-padding">
+                                Sorted Data <br>
+                                <label for="sortedData1"></label>
+                                <textarea name="sortedData1" class="output" id="sortedData1" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="median1">$\tilde{x}$ = </label><input type="text" class="shortP" name="median1" id="median1" readonly> <br><br>
+                        <label for="mode1">$\widehat{x}$ = </label><input type="text" class="longP" name="mode1" id="mode1" readonly> <br>
+                        (<i>If the dataset is multimodal or has no mode, click inside and scroll all the way to the end as applicable</i>) <br><br>
+                        <label for="minimum1">$min$ = </label><input type="text" class="shortG" name="minimum1" id="minimum1" readonly> <br><br>
+                        <label for="maximum1">$max$ = </label><input type="text" class="shortG" name="maximum1" id="maximum1" readonly> <br><br>
+                        <label for="midrange1">$x_{MR}$ = </label><input type="text" class="shortP" name="midrange1" id="midrange1" readonly>
+                    </p>
+                </div>
+            </form>
+            
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <div class="w3-col l6 w3-padding-large">
+                <form id="geometricMeanUngroupedDataset">
+                    <p>
+                        <mark>Case 7</mark> <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <u>To Calculate:</u> Geometric Mean <br>
+                        <b>Show all steps</b>
+                    </p>
+            
+                    <br>
+            
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetG"></label>
+                                <textarea name="datasetG" id="datasetG" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+            
+                    <br>
+            
+                    <p>
+                        <button onclick="geometricMeanUngroupedDataset()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>
+            
+                    <br>
+            
+                    <p>
+                        <label for="productDataG">$\Pi x$ = </label><input type="text" class="middleG" name="productDataG" id="productDataG" readonly> <br><br>
+                        <label for="sampleSizeDataG">$n$ = </label><input type="text" class="shortG" name="sampleSizeDataG" id="sampleSizeDataG" readonly> <br><br>
+                        <label for="geometricMean">GM = </label><input type="text" class="middleP" name="geometricMean" id="geometricMean" readonly>
+                    </p>
+                </form>
+            </div>
+            
+            <div class="w3-col l6 w3-padding-large">
+                
+            </div>
+            
+        </div>
+        <!-- End Measures of Center -->
+
+        <hr>
+
+        <!-- Measures of Spread -->
+        <div class="w3-row w3-padding-64" id="measuresSpread">
+            
+            <h2>Measures of Spread</h2>
+
+            <form id="measuresVariation1">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 1</mark> (First Method) <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Range, Variance, Standard Deviation, Coefficient of Variation, Mean Deviation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetA"></label>
+                                <textarea name="datasetA" id="datasetA" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation1()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>      
+                    
+                    <br>
+
+                    <table>
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataA"></label>
+                                <textarea name="sortedDataA" class="output" id="sortedDataA" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="minimumA">$min$ = </label><input type="text" class="shortG" name="minimumA" id="minimumA" readonly> <br><br>
+                        <label for="maximumA">$max$ = </label><input type="text" class="shortG" name="maximumA" id="maximumA" readonly> <br><br>
+                        <label for="rangeA">$range$ = </label><input type="text" class="shortP" name="rangeA" id="rangeA" readonly> <br><br>
+                        <label for="sumA">$\Sigma x$ = </label><input type="text" class="middleG" name="sumA" id="sumA" readonly> <br><br>
+                        <label for="sampleSizeA">$n$ = </label><input type="text" class="shortG" name="sampleSizeA" id="sampleSizeA" readonly> <br><br>
+                        <label for="meanA">$\bar{x}$ = </label><input type="text" class="middleG" name="meanA" id="meanA" readonly>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x - \bar{x}$ <br>
+                                <label for="deviationMeanA"></label>
+                                <textarea name="deviationMeanA" class="output" id="deviationMeanA" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $(x - \bar{x})^2$ <br>
+                                <label for="squareDeviationMeanA"></label>
+                                <textarea name="squareDeviationMeanA" class="output" id="squareDeviationMeanA" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumSquareDeviationMeanA">$\Sigma (x - \bar{x})^2$ = </label><input type="text" class="middleG" name="sumSquareDeviationMeanA" id="sumSquareDeviationMeanA" readonly> <br><br>
+                        <label for="sampleSizeLessA">$n - 1$ = </label><input type="text" class="shortG" name="sampleSizeLessA" id="sampleSizeLessA" readonly> <br><br>
+                        <label for="varianceA">$s^2$ = </label><input type="text" class="middleP" name="varianceA" id="varianceA" readonly> <br><br>
+                        <label for="standardDeviationA">$s$ = </label><input type="text" class="longP" name="standardDeviationA" id="standardDeviationA" readonly> <br><br>
+                        <label for="coefficientVariationA">$CV$ = </label><input type="text" class="longP" name="coefficientVariationA" id="coefficientVariationA" readonly>%
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $|x - \bar{x}|$ <br>
+                                <label for="absoluteDeviationMeanA"></label>
+                                <textarea name="absoluteDeviationMeanA" class="output" id="absoluteDeviationMeanA" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumAbsoluteDeviationMeanA">$\Sigma |x - \bar{x}|$ = </label><input type="text" class="middleG" name="sumAbsoluteDeviationMeanA" id="sumAbsoluteDeviationMeanA" readonly> <br><br>
+                        <label for="meanAbsoluteDeviationA">$MAD$ = </label><input type="text" class="middleP" name="meanAbsoluteDeviationA" id="meanAbsoluteDeviationA" readonly> <br><br>
+                        
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeA">$N$ = </label><input type="text" class="shortG" name="populationSizeA" id="populationSizeA" readonly> <br><br>
+                        <label for="populationVarianceA">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceA" id="populationVarianceA" readonly> <br><br>
+                        <label for="populationStandardDeviationA">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationA" id="populationStandardDeviationA" readonly> <br><br>
+                        <label for="populationCoefficientVariationA">$CV$ = </label><input type="text" class="longP" name="populationCoefficientVariationA" id="populationCoefficientVariationA" readonly>%
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation2">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 2</mark> (First Method) <br>
+                        <u>Given:</u> Ungrouped Dataset and Frequency <br>
+                        <u>To Calculate:</u> Variance, Standard Deviation, Coefficient of Variation, Mean Deviation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Ungrouped Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetB"></label>
+                                <textarea name="datasetB" id="datasetB" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="freqB"></label>
+                                <textarea name="freqB" id="freqB" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation2()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $f * x$ <br>
+                                <label for="productDataFrequencyB"></label>
+                                <textarea name="productDataFrequencyB" class="output" id="productDataFrequencyB" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductDataFrequencyB">$\Sigma fx$ = </label><input type="text" class="middleG" name="sumProductDataFrequencyB" id="sumProductDataFrequencyB" readonly> <br><br>
+                        <label for="sumFrequencyB">$\Sigma f$ = </label><input type="text" class="middleG" name="sumFrequencyB" id="sumFrequencyB" readonly> <br><br>
+                        <label for="meanB">$\bar{x}$ = </label><input type="text" class="middleG" name="meanB" id="meanB" readonly>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x - \bar{x}$ <br>
+                                <label for="deviationMeanB"></label>
+                                <textarea name="deviationMeanB" class="output" id="deviationMeanB" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $(x - \bar{x})^2$ <br>
+                                <label for="squareDeviationMeanB"></label>
+                                <textarea name="squareDeviationMeanB" class="output" id="squareDeviationMeanB" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f(x - \bar{x})^2$ <br>
+                                <label for="productFrequencySquareDeviationMeanB"></label>
+                                <textarea name="productFrequencySquareDeviationMeanB" class="output" id="productFrequencySquareDeviationMeanB" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductFrequencySquareDeviationMeanB">$\Sigma f(x - \bar{x})^2$ = </label><input type="text" class="middleG" name="sumProductFrequencySquareDeviationMeanB" id="sumProductFrequencySquareDeviationMeanB" readonly> <br><br>
+                        <label for="sumFrequencyLessB">$\Sigma f - 1$ = </label><input type="text" class="shortG" name="sumFrequencyLessB" id="sumFrequencyLessB" readonly> <br><br>
+                        <label for="varianceB">$s^2$ = </label><input type="text" class="middleP" name="varianceB" id="varianceB" readonly> <br><br>
+                        <label for="standardDeviationB">$s$ = </label><input type="text" class="longP" name="standardDeviationB" id="standardDeviationB" readonly> <br><br>
+                        <label for="coefficientVariationB">$CV$ = </label><input type="text" class="longP" name="coefficientVariationB" id="coefficientVariationB" readonly>%
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $|x - \bar{x}|$ <br>
+                                <label for="absoluteDeviationMeanB"></label>
+                                <textarea name="absoluteDeviationMeanB" class="output" id="absoluteDeviationMeanB" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f|x - \bar{x}|$ <br>
+                                <label for="productFrequencyAbsoluteDeviationMeanB"></label>
+                                <textarea name="productFrequencyAbsoluteDeviationMeanB" class="output" id="productFrequencyAbsoluteDeviationMeanB" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductFrequencyAbsoluteDeviationMeanB">$\Sigma f|x - \bar{x}|$ = </label><input type="text" class="middleG" name="sumProductFrequencyAbsoluteDeviationMeanB" id="sumProductFrequencyAbsoluteDeviationMeanB" readonly> <br><br>
+                        <label for="meanAbsoluteDeviationB">$MAD$ = </label><input type="text" class="middleP" name="meanAbsoluteDeviationB" id="meanAbsoluteDeviationB" readonly> <br><br>
+                        
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeB">$N$ = </label><input type="text" class="shortG" name="populationSizeB" id="populationSizeB" readonly> <br><br>
+                        <label for="populationVarianceB">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceB" id="populationVarianceB" readonly> <br><br>
+                        <label for="populationStandardDeviationB">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationB" id="populationStandardDeviationB" readonly> <br><br>
+                        <label for="populationCoefficientVariationB">$CV$ = </label><input type="text" class="longP" name="populationCoefficientVariationB" id="populationCoefficientVariationB" readonly>%
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation3">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 3</mark> (First Method)<br>
+                        <u>Given:</u> Grouped Dataset (<i>Lower Class Limit and Upper Class Limit</i>) and Frequency <br>
+                        <u>To Calculate:</u> Variance, Standard Deviation, Coefficient of Variation, Mean Deviation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Lower Class Limit, $LCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetLowerC"></label>
+                                <textarea name="datasetLowerC" class="wide" id="datasetLowerC" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Upper Class Limit, $UCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetUpperC"></label>
+                                <textarea name="datasetUpperC" class="wide" id="datasetUpperC" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="freqC"></label>
+                                <textarea name="freqC" class="wide" id="freqC" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation3()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid}$ <br>
+                                <label for="midpointC"></label>
+                                <textarea name="midpointC" class="output" id="midpointC" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $fx_{mid}$ <br>
+                                <label for="productMidpointFrequencyC"></label>
+                                <textarea name="productMidpointFrequencyC" class="output" id="productMidpointFrequencyC" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductMidpointFrequencyC">$\Sigma fx_{mid}$ = </label><input type="text" class="middleG" name="sumProductMidpointFrequencyC" id="sumProductMidpointFrequencyC" readonly> <br><br>
+                        <label for="sumFrequencyC">$\Sigma f$ = </label><input type="text" class="middleG" name="sumFrequencyC" id="sumFrequencyC" readonly> <br><br>
+                        <label for="meanC">$\bar{x}$ = </label><input type="text" class="middleG" name="meanC" id="meanC" readonly>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid} - \bar{x}$ <br>
+                                <label for="deviationMeanC"></label>
+                                <textarea name="deviationMeanC" class="output" id="deviationMeanC" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $(x_{mid} - \bar{x})^2$ <br>
+                                <label for="squareDeviationMeanC"></label>
+                                <textarea name="squareDeviationMeanC" class="output" id="squareDeviationMeanC" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f(x_{mid} - \bar{x})^2$ <br>
+                                <label for="productFrequencySquareDeviationMeanC"></label>
+                                <textarea name="productFrequencySquareDeviationMeanC" class="output" id="productFrequencySquareDeviationMeanC" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductFrequencySquareDeviationMeanC">$\Sigma f(x_{mid} - \bar{x})^2$ = </label><input type="text" class="middleG" name="sumProductFrequencySquareDeviationMeanC" id="sumProductFrequencySquareDeviationMeanC" readonly> <br><br>
+                        <label for="sumFrequencyLessC">$\Sigma f - 1$ = </label><input type="text" class="shortG" name="sumFrequencyLessC" id="sumFrequencyLessC" readonly> <br><br>
+                        <label for="varianceC">$s^2$ = </label><input type="text" class="middleP" name="varianceC" id="varianceC" readonly> <br><br>
+                        <label for="standardDeviationC">$s$ = </label><input type="text" class="longP" name="standardDeviationC" id="standardDeviationC" readonly> <br><br>
+                        <label for="coefficientVariationC">$CV$ = </label><input type="text" class="longP" name="coefficientVariationC" id="coefficientVariationC" readonly>%
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $|x_{mid} - \bar{x}|$ <br>
+                                <label for="absoluteDeviationMeanC"></label>
+                                <textarea name="absoluteDeviationMeanC" class="output" id="absoluteDeviationMeanC" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $f|x_{mid} - \bar{x}|$ <br>
+                                <label for="productFrequencyAbsoluteDeviationMeanC"></label>
+                                <textarea name="productFrequencyAbsoluteDeviationMeanC" class="output" id="productFrequencyAbsoluteDeviationMeanC" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductFrequencyAbsoluteDeviationMeanC">$\Sigma f|x_{mid} - \bar{x}|$ = </label><input type="text" class="middleG" name="sumProductFrequencyAbsoluteDeviationMeanC" id="sumProductFrequencyAbsoluteDeviationMeanC" readonly> <br><br>
+                        <label for="meanAbsoluteDeviationC">$MAD$ = </label><input type="text" class="middleP" name="meanAbsoluteDeviationC" id="meanAbsoluteDeviationC" readonly> <br><br>
+                        
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeC">$N$ = </label><input type="text" class="shortG" name="populationSizeC" id="populationSizeC" readonly> <br><br>
+                        <label for="populationVarianceC">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceC" id="populationVarianceC" readonly> <br><br>
+                        <label for="populationStandardDeviationC">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationC" id="populationStandardDeviationC" readonly> <br><br>
+                        <label for="populationCoefficientVariationC">$CV$ = </label><input type="text" class="longP" name="populationCoefficientVariationC" id="populationCoefficientVariationC" readonly>%
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation4">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 1</mark> (Second Method) <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Range, Variance, Standard Deviation, Coefficient of Variation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetD"></label>
+                                <textarea name="datasetD" id="datasetD" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation4()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>       
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataD"></label>
+                                <textarea name="sortedDataD" class="output" id="sortedDataD" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="minimumD">$min$ = </label><input type="text" class="shortG" name="minimumD" id="minimumD" readonly> <br><br>
+                        <label for="maximumD">$max$ = </label><input type="text" class="shortG" name="maximumD" id="maximumD" readonly> <br><br>
+                        <label for="rangeD">$range$ = </label><input type="text" class="shortP" name="rangeD" id="rangeD" readonly>
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x^2$ <br>
+                                <label for="squareDataD"></label>
+                                <textarea name="squareDataD" class="output" id="squareDataD" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumSquareDataD">$\Sigma x^2$ = </label><input type="text" class="middleG" name="sumSquareDataD" id="sumSquareDataD" readonly> <br><br>
+                        <label for="sampleSizeD">$n$ = </label><input type="text" class="shortG" name="sampleSizeD" id="sampleSizeD" readonly> <br><br>
+                        <label for="productSampleSizeSumSquareDataD">$n(\Sigma x^2)$ = </label><input type="text" class="middleG" name="productSampleSizeSumSquareDataD" id="productSampleSizeSumSquareDataD" readonly> <br><br>
+                        <label for="sumDataD">$\Sigma x$ = </label><input type="text" class="middleG" name="sumDataD" id="sumDataD" readonly> <br><br>
+                        <label for="squareSumDataD">$(\Sigma x)^2$ = </label><input type="text" class="middleG" name="squareSumDataD" id="squareSumDataD" readonly> <br><br>
+                        <label for="differenceD">$n(\Sigma x^2) - (\Sigma x)^2$ = </label><input type="text" class="middleG" name="differenceD" id="differenceD" readonly> <br><br>
+                        <label for="sampleSizeLessD">$n - 1$ = </label><input type="text" class="shortG" name="sampleSizeLessD" id="sampleSizeLessD" readonly> <br><br>
+                        <label for="productSampleSizeSampleSizeLessD">$n(n - 1)$ = </label><input type="text" class="middleG" name="productSampleSizeSampleSizeLessD" id="productSampleSizeSampleSizeLessD" readonly> <br><br>
+                        <label for="varianceD">$s^2$ = </label><input type="text" class="middleP" name="varianceD" id="varianceD" readonly> <br><br>
+                        <label for="standardDeviationD">$s$ = </label><input type="text" class="longP" name="standardDeviationD" id="standardDeviationD" readonly> <br><br>
+
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeD">$N$ = </label><input type="text" class="shortG" name="populationSizeD" id="populationSizeD" readonly> <br><br>
+                        <label for="populationVarianceD">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceD" id="populationVarianceD" readonly> <br><br>
+                        <label for="populationStandardDeviationD">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationD" id="populationStandardDeviationD" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation5">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 2</mark> (Second Method) <br>
+                        <u>Given:</u> Ungrouped Dataset and Frequency <br>
+                        <u>To Calculate:</u> Variance, Standard Deviation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Ungrouped Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetE"></label>
+                                <textarea name="datasetE" id="datasetE" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="freqE"></label>
+                                <textarea name="freqE" id="freqE" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation5()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $fx$ <br>
+                                <label for="productDataFrequencyE"></label>
+                                <textarea name="productDataFrequencyE" class="output" id="productDataFrequencyE" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $x^2$ <br>
+                                <label for="squareDataE"></label>
+                                <textarea name="squareDataE" class="output" id="squareDataE" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $fx^2$  <br>
+                                <label for="productSquareDataFrequencyE"></label>
+                                <textarea name="productSquareDataFrequencyE" class="output" id="productSquareDataFrequencyE" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductSquareDataFrequencyE">$\Sigma fx^2$ = </label><input type="text" class="middleG" name="sumProductSquareDataFrequencyE" id="sumProductSquareDataFrequencyE" readonly> <br><br>
+                        <label for="sumFrequencyE">$\Sigma f$ = </label><input type="text" class="middleG" name="sumFrequencyE" id="sumFrequencyE" readonly> <br><br>
+                        <label for="productSumsE">$\Sigma f(\Sigma fx^2)$ = </label><input type="text" class="middleG" name="productSumsE" id="productSumsE" readonly> <br><br>
+                        <label for="sumProductDataFrequencyE">$\Sigma fx$ = </label><input type="text" class="middleG" name="sumProductDataFrequencyE" id="sumProductDataFrequencyE" readonly> <br><br>
+                        <label for="squareSumProductDataFrequencyE">$(\Sigma fx)^2$ = </label><input type="text" class="middleG" name="squareSumProductDataFrequencyE" id="squareSumProductDataFrequencyE" readonly> <br><br>
+                        <label for="differenceE">$\Sigma f(\Sigma fx^2) - (\Sigma fx)^2$ = </label><input type="text" class="middleG" name="differenceE" id="differenceE" readonly> <br><br>
+                        <label for="sumFrequencyLessE">$\Sigma f - 1$ = </label><input type="text" class="shortG" name="sumFrequencyLessE" id="sumFrequencyLessE" readonly> <br><br>
+                        <label for="productSumFrequencySumFrequencyLessE">$\Sigma f(\Sigma f - 1)$ = </label><input type="text" class="middleG" name="productSumFrequencySumFrequencyLessE" id="productSumFrequencySumFrequencyLessE" readonly> <br><br>
+                        <label for="varianceE">$s^2$ = </label><input type="text" class="middleP" name="varianceE" id="varianceE" readonly> <br><br>
+                        <label for="standardDeviationE">$s$ = </label><input type="text" class="longP" name="standardDeviationE" id="standardDeviationE" readonly> <br><br>
+
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeE">$N$ = </label><input type="text" class="shortG" name="populationSizeE" id="populationSizeE" readonly> <br><br>
+                        <label for="populationVarianceE">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceE" id="populationVarianceE" readonly> <br><br>
+                        <label for="populationStandardDeviationE">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationE" id="populationStandardDeviationE" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation6">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 3</mark> (Second Method)<br>
+                        <u>Given:</u> Grouped Dataset (<i>Lower Class Limit and Upper Class Limit</i>) and Frequency <br>
+                        <u>To Calculate:</u> Variance, Standard Deviation <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Lower Class Limit, $LCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetLowerF"></label>
+                                <textarea name="datasetLowerF" class="wide" id="datasetLowerF" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Upper Class Limit, $UCL$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetUpperF"></label>
+                                <textarea name="datasetUpperF" class="wide" id="datasetUpperF" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="green w3-padding">Frequency, $f$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="freqF"></label>
+                                <textarea name="freqF" class="wide" id="freqF" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresVariation6()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>        
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid}$ <br>
+                                <label for="midpointF"></label>
+                                <textarea name="midpointF" class="output" id="midpointF" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $fx_{mid}$ <br>
+                                <label for="productMidpointFrequencyF"></label>
+                                <textarea name="productMidpointFrequencyF" class="output" id="productMidpointFrequencyF" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $x_{mid}^2$ <br>
+                                <label for="squareMidpointF"></label>
+                                <textarea name="squareMidpointF" class="output" id="squareMidpointF" readonly></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                $fx_{mid}^2$  <br>
+                                <label for="productSquareMidpointFrequencyF"></label>
+                                <textarea name="productSquareMidpointFrequencyF" class="output" id="productSquareMidpointFrequencyF" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="sumProductSquareMidpointFrequencyF">$\Sigma f(x_{mid}^2)$ = </label><input type="text" class="middleG" name="sumProductSquareMidpointFrequencyF" id="sumProductSquareMidpointFrequencyF" readonly> <br><br>
+                        <label for="sumFrequencyF">$\Sigma f$ = </label><input type="text" class="middleG" name="sumFrequencyF" id="sumFrequencyF" readonly> <br><br>
+                        <label for="productSumsF">$\Sigma f(\Sigma fx_{mid}^2)$ = </label><input type="text" class="middleG" name="productSumsF" id="productSumsF" readonly> <br><br>
+                        <label for="sumProductMidpointFrequencyF">$\Sigma fx_{mid}$ = </label><input type="text" class="middleG" name="sumProductMidpointFrequencyF" id="sumProductMidpointFrequencyF" readonly> <br><br>
+                        <label for="squareSumProductMidpointFrequencyF">$(\Sigma fx_{mid})^2$ = </label><input type="text" class="middleG" name="squareSumProductMidpointFrequencyF" id="squareSumProductMidpointFrequencyF" readonly> <br><br>
+                        <label for="differenceF">$\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2$ = </label><input type="text" class="middleG" name="differenceF" id="differenceF" readonly> <br><br>
+                        <label for="sumFrequencyLessF">$\Sigma f - 1$ = </label><input type="text" class="shortG" name="sumFrequencyLessF" id="sumFrequencyLessF" readonly> <br><br>
+                        <label for="productSumFrequencySumFrequencyLessF">$\Sigma f(\Sigma f - 1)$ = </label><input type="text" class="middleG" name="productSumFrequencySumFrequencyLessF" id="productSumFrequencySumFrequencyLessF" readonly> <br><br>
+                        <label for="varianceF">$s^2$ = </label><input type="text" class="middleP" name="varianceF" id="varianceF" readonly> <br><br>
+                        <label for="standardDeviationF">$s$ = </label><input type="text" class="longP" name="standardDeviationF" id="standardDeviationF" readonly> <br><br>
+
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSizeF">$N$ = </label><input type="text" class="shortG" name="populationSizeF" id="populationSizeF" readonly> <br><br>
+                        <label for="populationVarianceF">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVarianceF" id="populationVarianceF" readonly> <br><br>
+                        <label for="populationStandardDeviationF">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviationF" id="populationStandardDeviationF" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <h3>Range Rule of Thumb</h3>
+
+            <form id="rangeRuleThumb">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 4</mark> <br>
+                        <u>Given:</u> Minimum, Maximum <br>
+                        <u>To Calculate:</u> Range, Standard Deviation (estimated)
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="minimumG">$min$ = </label><input type="text" class="shortB" name="minimumG" id="minimumG" required> <br><br>
+                        <label for="maximumG">$max$ = </label><input type="text" class="shortB" name="maximumG" id="maximumG" required> 
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="rangeRuleThumb()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p> 
+
+                    <br>
+                    
+                    <p>
+                        <label for="rangeG">$range$ = </label><input type="text" class="shortP" name="rangeG" id="rangeG" readonly> <br><br>
+                        <label for="standardDeviationG">$s$ or $\sigma$ = </label><input type="text" class="middleP" name="standardDeviationG" id="standardDeviationG" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <form id="rangeRuleOfThumb">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 5</mark> <br>
+                        <u>Given:</u> Range <br>
+                        <u>To Calculate:</u> Standard Deviation (estimated)
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="rangeH">$range$ = </label><input type="text" class="shortB" name="rangeH" id="rangeH" required> 
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="rangeRuleOfThumb()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p> 
+
+                    <br>
+                    
+                    <p>
+                        <label for="standardDeviationH">$s$ or $\sigma$ = </label><input type="text" class="middleP" name="standardDeviationH" id="standardDeviationH" readonly>
+                    </p>
+                </div>
+            </form>  
+            
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="measuresVariation7">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 6</mark> <br>
+                        <u>Given:</u> Assumed Mean, Deviations from the Assumed Mean <br>
+                        <u>To Calculate:</u> Variance, Standard Deviation, Coefficient of Variation <br>
+                        Find the Dataset <br>
+                        Sort the Dataset <br>
+                        <u>To Calculate:</u> Range <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="assumedMean2">Assumed Mean = </label><input type="text" class="shortB" name="assumedMean2" id="assumedMean2" required> <br><br>
+                    </p>
+            
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">$x - AM$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="deviationsAssumedMean2"></label>
+                                <textarea name="deviationsAssumedMean2" id="deviationsAssumedMean2" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+            
+                    <br>
+            
+                    <p>
+                        <button onclick="measuresVariation7()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>    
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="sumDeviations2">$\Sigma (x - AM)$ = </label><input type="text" class="middleG" name="sumDeviations2" id="sumDeviations2" readonly> <br><br>
+                        <label for="sampleSize2">$n$ = </label><input type="text" class="shortG" name="sampleSize2" id="sampleSize2" readonly> <br><br>
+                        <label for="mean2">$\bar{x}$ = </label><input type="text" class="middleG" name="mean2" id="mean2" readonly> <br><br>
+                        <label for="sampleSizeLess2">$n - 1$ = </label><input type="text" class="shortG" name="sampleSizeLess2" id="sampleSizeLess2" readonly> <br><br>
+                        <label for="variance2">$s^2$ = </label><input type="text" class="middleP" name="variance2" id="variance2" readonly> <br><br>
+                        <label for="standardDeviation2">$s$ = </label><input type="text" class="longP" name="standardDeviation2" id="standardDeviation2" readonly> <br><br>
+                        <label for="coefficientVariation2">$CV$ = </label><input type="text" class="longP" name="coefficientVariation2" id="coefficientVariation2" readonly>%
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                Raw Data, $X$ <br>
+                                <label for="rawData2"></label>
+                                <textarea name="rawData2" class="output" id="rawData2" readonly></textarea>
+                            </td>
+                            <td class="w3-padding">
+                                Sorted Data <br>
+                                <label for="sortedData2"></label>
+                                <textarea name="sortedData2" class="output" id="sortedData2" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <label for="minimum2">$min$ = </label><input type="text" class="shortG" name="minimum2" id="minimum2" readonly> <br><br>
+                        <label for="maximum2">$max$ = </label><input type="text" class="shortG" name="maximum2" id="maximum2" readonly> <br><br>
+                        <label for="range2">$range$ = </label><input type="text" class="shortP" name="range2" id="range2" readonly> <br><br>
+
+                        ................................................................ <br>
+                        <b>Population</b> <br>
+                        ................................................................ <br><br>
+                        <label for="populationSize2">$N$ = </label><input type="text" class="shortG" name="populationSize2" id="populationSize2" readonly> <br><br>
+                        <label for="populationVariance2">$\sigma^2$ = </label><input type="text" class="middleP" name="populationVariance2" id="populationVariance2" readonly> <br><br>
+                        <label for="populationStandardDeviation2">$\sigma$ = </label><input type="text" class="longP" name="populationStandardDeviation2" id="populationStandardDeviation2" readonly> <br><br>
+                        <label for="populationCoefficientVariation2">$CV$ = </label><input type="text" class="longP" name="populationCoefficientVariation2" id="populationCoefficientVariation2" readonly>%
+                    </p>
+                </div>
+            </form>
+
+        </div>
+        <!-- End Measures of Spread -->
+
+        <hr>
+
+        <!-- Measures of Position -->
+        <div class="w3-row w3-padding-64" id="measuresPosition">
+            
+            <h2>Measures of Position</h2>
+
+            <form id="measuresLocation1">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 1</mark> <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Five- Number Summary of Dataset, Interquartile Range, Semi-interquartile Range, Midquartile, 
+                        Lower Fence, Upper Fence, Outliers
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data, $X$</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetJ"></label>
+                                <textarea name="datasetJ" id="datasetJ" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <button onclick="measuresLocation1()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>    
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataJ"></label>
+                                <textarea name="sortedDataJ" class="output" id="sortedDataJ" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="sampleSizeJ">$n$ = </label><input type="text" class="shortG" name="sampleSizeJ" id="sampleSizeJ" readonly> <br><br>
+                        <label for="minimumJ">$min$ = </label><input type="text" class="shortP" name="minimumJ" id="minimumJ" readonly> <br><br>
+                        <label for="lowerQuartileJ">$Q_1$ = </label><input type="text" class="shortP" name="lowerQuartileJ" id="lowerQuartileJ" readonly> <br><br>
+                        <label for="middleQuartileJ">$Q_2$ = </label><input type="text" class="shortP" name="middleQuartileJ" id="middleQuartileJ" readonly> <br><br>
+                        <label for="upperQuartileJ">$Q_3$ = </label><input type="text" class="shortP" name="upperQuartileJ" id="upperQuartileJ" readonly> <br><br>                        
+                        <label for="maximumJ">$max$ = </label><input type="text" class="shortP" name="maximumJ" id="maximumJ" readonly> <br><br>
+                        <label for="interquartileRangeJ">$IQR$ = </label><input type="text" class="shortP" name="interquartileRangeJ" id="interquartileRangeJ" readonly> <br><br>
+                        <label for="semiInterquartileRangeJ">$SIQR$ = </label><input type="text" class="shortG" name="semiInterquartileRangeJ" id="semiInterquartileRangeJ" readonly> <br><br>
+                        <label for="midquartileJ">$MQ$ = </label><input type="text" class="shortP" name="midquartileJ" id="midquartileJ" readonly> <br><br>
+                        <label for="lowerFenceJ">$LF$ = </label><input type="text" class="shortP" name="lowerFenceJ" id="lowerFenceJ" readonly> <br><br>
+                        <label for="upperFenceJ">$UF$ = </label><input type="text" class="shortP" name="upperFenceJ" id="upperFenceJ" readonly> <br><br>
+                        <label for="outliersJ">Outliers = </label><input type="text" class="longP" name="outliersJ" id="outliersJ" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <h3>Percentiles (Convert a Data Value to a Percentile)</h3>
+
+            <form id="percentileDataValue">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 2</mark> <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> Percentile of a Data Value <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetK"></label>
+                                <textarea name="datasetK" id="datasetK" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <label for="calculatePercentileValueK">Calculate the percentile of </label><input type="text" class="shortB" name="calculatePercentileValueK" id="calculatePercentileValueK" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="percentileDataValue()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>      
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataK"></label>
+                                <textarea name="sortedDataK" class="output" id="sortedDataK" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <table>
+                        <tr>
+                            <td class="w3-padding">
+                                The data values less than 
+                                <label for="dataValueK"></label><input type="text" class="shortG" name="dataValueK" id="dataValueK" readonly> are: 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">                                
+                                <label for="dataValuesLessK"></label>
+                                <textarea name="dataValuesLessK" class="output" id="dataValuesLessK" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        The count of those values is: <label for="sizeDataValuesLessK"></label><input type="text" class="shortG" name="sizeDataValuesLessK" id="sizeDataValuesLessK" readonly> <br><br>
+
+                        <label for="sampleSizeK">Sample Size = </label><input type="text" class="shortG" name="sampleSizeK" id="sampleSizeK" readonly> <br><br>
+
+                        <label for="percentileValueK">Answer is </label><input type="text" class="shortP" name="percentileValueK" id="percentileValueK" readonly>th percentile
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <h3>Percentiles (Convert a Percentile to a Data Value)</h3>
+
+            <form id="dataValuePercentile">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 3</mark> <br>
+                        <u>Given:</u> Raw Dataset <br>
+                        <b>Sort the Data</b> <br>
+                        <u>To Calculate:</u> the <i>nth</i> Percentile <br>
+                        <b>Show all steps</b>
+                    </p>
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">Raw Data</th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="datasetL"></label>
+                                <textarea name="datasetL" id="datasetL" placeholder="Please type each value on the same line separated by comma. No extra blank line. No comma after the last value. No period." required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <p>
+                        <label for="calculatePercentileL">Calculate the </label><input type="text" class="shortB" name="calculatePercentileL" id="calculatePercentileL" required>th percentile
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="dataValuePercentile()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p>     
+                    
+                    <br>
+
+                    <table class="w3-center">
+                        <tr>
+                            <th class="green w3-padding">
+                                Sorted Data <br>
+                                (Ascending Order)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="w3-padding">
+                                <label for="sortedDataL"></label>
+                                <textarea name="sortedDataL" class="output" id="sortedDataL" readonly></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <label for="sampleSizeL">Sample Size = </label><input type="text" class="shortG" name="sampleSizeL" id="sampleSizeL" readonly> <br><br>
+
+                        <label for="positionL">Position = </label><input type="text" class="shortG" name="positionL" id="positionL" readonly> <br>
+                        <i>
+                            If it is not an integer, round up to the next integer and read the value <br>
+                            If it is an integer, read the values at this position and next position, and find the mean.
+                        </i> <br><br>
+
+                        <label for="valuePositionL">Value at Position = </label><input type="text" class="shortG" name="valuePositionL" id="valuePositionL" readonly> <br><br>
+
+                        <label for="nextPositionL">Next Position = </label><input type="text" class="shortG" name="nextPositionL" id="nextPositionL" readonly> <br><br>
+
+                        <label for="valueNextPositionL">Value at Next Position = </label><input type="text" class="shortG" name="valueNextPositionL" id="valueNextPositionL" readonly> <br><br>
+
+                        <label for="valuePercentileL">Answer is </label><input type="text" class="shortP" name="valuePercentileL" id="valuePercentileL" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <br><br>
+            <hr class="darkblueLine">
+            <br><br>
+
+            <form id="standardScore">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 4</mark> <br>
+                        <u>Given:</u> Variable, Mean, Standard Deviation <br>
+                        <u>To Calculate:</u> Standard Score; tell whether a data value is usual or unusual
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="dataValueM"> Data Value =  </label><input type="text" class="shortB" name="dataValueM" id="dataValueM" required> <br><br>
+                        <label for="meanM">Mean = </label><input type="text" class="shortB" name="meanM" id="meanM" required> <br><br>
+                        <label for="standardDeviationM">Standard Deviation = </label><input type="text" class="shortB" name="standardDeviationM" id="standardDeviationM" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="standardScore()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p> 
+
+                    <br>
+                    
+                    <p>
+                        <label for="differenceVariableMeanM">The difference between the data value and the mean = </label><input type="text" class="shortG" name="differenceVariableMeanM" id="differenceVariableMeanM" readonly> <br><br>
+                        <label for="differenceSDM">The difference is </label><input type="text" class="shortG" name="differenceSDM" id="differenceSDM" readonly> standard deviations <br><br>
+                        <label for="zScoreM">Standard Score = </label><input type="text" class="shortP" name="zScoreM" id="zScoreM" readonly> <br><br>
+                        <label for="messageM"></label><input type="text" class="longP" name="messageM" id="messageM" readonly>
+                    </p>
+                </div>
+            </form>
+
+            <form id="boundaryValues">
+                <div class="w3-col l6 w3-padding-large">
+                    <p>
+                        <mark>Case 5</mark> <br>
+                        <u>Given:</u> Mean, Standard Deviation <br>
+                        <u>To Calculate:</u> the boundaries of usual and unusual data values
+                    </p>
+                    
+                    <br>
+
+                    <p>
+                        <label for="meanN">Mean = </label><input type="text" class="shortB" name="meanN" id="meanN" required> <br><br>
+                        <label for="standardDeviationN">Standard Deviation = </label><input type="text" class="shortB" name="standardDeviationN" id="standardDeviationN" required>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <button onclick="boundaryValues()">Calculate</button>
+                        <input type="reset" value="Reset">
+                    </p> 
+
+                    <br>
+                    
+                    <p>
+                        <label for="lowerBoundaryN">Lower Boundary = </label><input type="text" class="shortP" name="lowerBoundaryN" id="lowerBoundaryN" readonly> <br><br>
+                        <label for="upperBoundaryN">Upper Boundary = </label><input type="text" class="shortP" name="upperBoundaryN" id="upperBoundaryN" readonly>
+                    </p>
+                    <div id="messageN" class="darkblue"></div>
+                </div>
+            </form> 
+
+        </div>
+        <!-- End Measures of Position -->
+
+        
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center cornsilk w3-padding-16">
+        <p>
+            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>                    
+            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
+            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+        </p>
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-106065945-1'}, 'google_translate_element');
+            }
+        </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2017 &nbsp;<a href="https://www.samdomforpeace.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>
+    </footer>
+    
+    <script src="scripts/messages8.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="scripts/measuresofCenter.js"></script>
+    <script src="scripts/measuresofSpread.js"></script>
+    <script src="scripts/measuresofPosition.js"></script>
+    
+    <!--
+        Not used. Library does not 'always' work for multimode or no mode
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    -->
+
+    </body>
+</html>
