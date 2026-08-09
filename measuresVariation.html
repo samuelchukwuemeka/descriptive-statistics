@@ -1,886 +1,895 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106065945-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
 
-            gtag('config', 'UA-106065945-1');
-        </script>
+<head>
 
-        <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-        <meta name="google-site-verification" content="dWWImG59lcpKRGrhVSEW_j8U2jW1vMTG1_J2dUBrF4s">
-        <meta name="msvalidate.01" content="3EEBD9006AA36E19F3501CC431FCA6CB">
-        <title>Measures of Variation</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="The author, Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in the measures of variability.">
-        <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
+    <title>Measures of Variation</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="The author, Samuel Dominic Chukwuemeka gives all the credit to our LORD and GOD JESUS CHRIST. We are experts in the measures of variability.">
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdomf for peace, math, 
               mathematics, statistics, descriptive statistics, mean, median, mode, midrange, range, variance, 
               standard deviation, mean deviation, percentiles, deciles, quartiles, quintiles, skewness, kurtosis, 
               standard error, measures of center, summation, sample size, population size, measures of central tendency, 
               measures of dispersion, measures of spread, measures of variation, measures of variability, 
               measures of position, measures of location, geometric mean, trimmed mean, arithmetic mean, 
-              measures of relative standing, boxplots">      
-        <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+              measures of relative standing, boxplots">
+    <link href="styles/solvedExamples.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    
-    <body>
-        
-        <!-- Header/Home -->
-        <header class="w3-padding-64 bisque" id="quotes">
-            <div class="w3-center">
-                <button class="quotations" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
-            </div>
-            
-            <div class="quotes w3-content" id="solutionQuotes">
-                <p>
-                    <q>
-                        If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the 
-                        <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our FATHER in Heaven prayer)</a> <br>
-                        It is the <b>most powerful prayer</b>.
-                        A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
-                    </q> - Samuel Dominic Chukwuemeka 
-                </p>
-                <p id="messages3"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
-                <p><q>The Joy of a Teacher is the Success of his Students.</q> - Samuel Chukwuemeka</p>
-            </div>
-        </header>
+
+<body>
+
+    <!-- Header/Home -->
+    <header class="w3-padding-64 bisque" id="quotes">
+        <div class="w3-center">
+            <button class="quotations" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+
+        <div class="quotes w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages3"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b>.</q> - Samuel
+                Chukwuemeka</p>
+        </div>
+    </header>
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples: Measures of Variability</h1>
+
+    <p class="w3-container">
+        Prerequisite: <a href="https://www.samuelchukwuemeka.com/statistics/statistics.html"
+            target="_blank">Introductory Statistics</a> <br>
+
+        <mark><b>Calculators:</b></mark> <br>
+        Vertical Data Entry: <a
+            href="https://samuelchukwuemeka.github.io/descriptive-statistics/descriptive-statistics-calculators.html#measuresSpread"
+            target="_blank">Measures of Spread</a> <br>
+        Horizontal Data Entry: <a
+            href="https://samuelchukwuemeka.github.io/descriptive-statistics/descriptiveStatistics.html#measuresSpread"
+            target="_blank">Measures of Spread</a>
 
         <br><br>
-                        
-        <!-- Page Content -->
-                
-        <h1>Solved Examples: Measures of Variability</h1>
 
-        <p class="w3-container">
-            Prerequisite: <a href="https://www.samuelchukwuemeka.com/statistics/statistics.html" target="_blank">Introductory Statistics</a> <br>
-            
-            <mark><b>Calculators:</b></mark> <br>
-            Vertical Data Entry: <a href="https://samuelchukwuemeka.github.io/descriptive-statistics/descriptive-statistics-calculators.html#measuresSpread" target="_blank">Measures of Spread</a> <br>
-            Horizontal Data Entry: <a href="https://samuelchukwuemeka.github.io/descriptive-statistics/descriptiveStatistics.html#measuresSpread" target="_blank">Measures of Spread</a>
-        
-            <br><br>
+        <!-- Image in top left corner -->
+        <a href="https://samuelchukwuemeka.github.io/descriptive-statistics" title="Samuel Dominic Chukwuemeka"><img
+                src="images/chukwuemeka4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)"
+                class="images"></a>
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...$60$ questions for $60$ minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br><br>
+        <mark>For SAT Students</mark> <br>
+        Any question labeled SAT-C is a question that allows a calculator. <br>
+        Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
+        <mark>For JAMB Students</mark> <br>
+        Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
 
-            <!-- Image in top left corner -->
-            <a href="https://samuelchukwuemeka.github.io/descriptive-statistics" title="Samuel Dominic Chukwuemeka"><img src="images/chukwuemeka4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images"></a>
-            <mark>For ACT Students</mark> <br>
-            The ACT is a timed exam...$60$ questions for $60$ minutes <br>
-            This implies that you have to solve each question in one minute. <br>
-            Some questions will typically take less than a minute a solve. <br>
-            Some questions will typically take more than a minute to solve. <br>
-            The goal is to maximize your time. You use the time saved on those questions you
-            solved in less than a minute, to solve the questions that will take more than a minute. <br>
-            So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
-            So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
-            Please ensure you attempt <u>all ACT questions</u>. <br>
-            There is no <i>negative</i> penalty for any wrong answer. <br><br>
-            <mark>For SAT Students</mark> <br>
-            Any question labeled SAT-C is a question that allows a calculator. <br>
-            Any question labeled SAT-NC is a question that does not allow a calculator. <br><br>
-            <mark>For JAMB Students</mark> <br>
-            Calculators are not allowed. So, the questions are solved in a way that does not require a calculator. <br><br>
-            <mark>For WASSCE Students</mark> <br>
-            Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
-            Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
-            <mark>For NSC Students</mark> <br>
-            <u>For the Questions:</u> <br>
-            Any space included in a number indicates a comma used to separate digits...separating multiples of three digits from behind. <br>
-            Any comma included in a number indicates a decimal point. <br>
-            <u>For the Solutions:</u> <br>
-            Decimals are used appropriately rather than commas <br>
-            Commas are used to separate digits appropriately.
-        
-            <br><br>
+        <br><br>
 
-            Solve all questions. <br>
-            Show all work.
+        Solve all questions. <br>
+        Show all work.
+    </p>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV1')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV1">
+                    <br>
+                    Student $E$ made the highest test score because the score is $2.00$ standard deviations above the
+                    mean.
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) <b>JAMB</b> Find the variance of $2, 6, 8, 6, 2$ and $6$ <br><br>
+                $
+                A.\;\; \sqrt{5} \\[3ex]
+                B.\;\; \sqrt{6} \\[3ex]
+                C.\;\; 5 \\[3ex]
+                D.\;\; 6 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV2')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV2">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="w3-padding">$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$-3$</td>
+                            <td>$9$</td>
+                            <td>$18$</td>
+                        </tr>
+                        <tr>
+                            <td>$6$</td>
+                            <td>$3$</td>
+                            <td>$18$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$3$</td>
+                        </tr>
+                        <tr>
+                            <td>$8$</td>
+                            <td>$1$</td>
+                            <td>$8$</td>
+                            <td>$3$</td>
+                            <td>$9$</td>
+                            <td>$9$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 6$</td>
+                            <td>$\Sigma fx = 30$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 30$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{30}{6} \\[5ex]
+                    = 5 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{30}{6 - 1} \\[5ex]
+                    = \dfrac{30}{5} \\[5ex]
+                    = 6
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV3')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV3">
+                    <br>
+                    (a.) A data score is <u>usual</u> if $-2.00 \le z \le 2.00$ <br>
+                    A data value is <u>unusual</u> if the $z-score \lt -2.00$ OR the $z-score \gt 2.00$ <br>
+                    The lower $z-score$ boundary is $-2.00$ <br>
+                    The upper $z-score$ boundary is $2.00$ <br>
+                    This implies that $-2.00$ and $2.00$ are the $z-scores$ that separate the unusual $IQ$ scores
+                    from the usual $IQ$ scores <br><br>
+                    (b.) To find the $IQ$ scores (data values), we need to express them in terms of the $z-scores$.
+                    <br><br>
+                    $
+                    z = \dfrac{x - \mu}{\sigma} \\[5ex]
+                    \rightarrow x - \mu = z\sigma \\[3ex]
+                    x = z\sigma + \mu \\[3ex]
+                    Lower\:\:IQ\:\:score\:\:boundary = -2(19) + 107 = -38 + 107 = 69 \\[3ex]
+                    Upper\:\:IQ\:\:score\:\:boundary = 2(19) + 107 = 38 + 107 = 145 \\[3ex]
+                    Usual\:\:IQ\:\:scores:\:\: 69 \le IQ \le 145 \\[3ex]
+                    Unusual\:\:IQ\:\:scores:\:\: IQ \lt 69 \:\:OR\:\: IQ \gt 145 \\[3ex]
+                    $
+                    Therefore $69$ and $145$ are the $IQ$ scores that separate the unusual $IQ$ scores
+                    from the usual $IQ$ scores
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) <b>JAMB</b> Find the range of $\dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3},
+                \dfrac{8}{9}$ and $\dfrac{4}{3}$ <br><br>
+                $
+                A.\;\; \dfrac{4}{3} \\[5ex]
+                B.\;\; \dfrac{7}{6} \\[5ex]
+                C.\;\; \dfrac{5}{6} \\[5ex]
+                D.\;\; \dfrac{3}{4} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV4')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV4">
+                    <br>
+                    $
+                    \dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3}, \dfrac{8}{9}, \dfrac{4}{3} \\[5ex]
+                    LCD\;\;of\;\; 6, 3, 2, 9 = 18 \\[3ex]
+                    \implies \\[3ex]
+                    \dfrac{3}{18}, \dfrac{6}{18}, \dfrac{27}{18}, \dfrac{12}{18}, \dfrac{16}{18}, \dfrac{24}{18} \\[5ex]
+                    maximum = \dfrac{27}{18} \\[5ex]
+                    minimum = \dfrac{3}{18} \\[5ex]
+                    Range = maximum - minimum \\[3ex]
+                    = \dfrac{27}{18} - \dfrac{3}{18} \\[5ex]
+                    = \dfrac{27 - 3}{18} \\[5ex]
+                    = \dfrac{24}{18} \\[5ex]
+                    = \dfrac{4}{3}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV5')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV5">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) <b>JAMB</b> The range of the data $k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1$ and $k + 6$
+                is <br><br>
+                $
+                A.\;\; 6 \\[3ex]
+                B.\;\; 8 \\[3ex]
+                C.\;\; 10 \\[3ex]
+                D.\;\; 11 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV6')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV6">
+                    <br>
+                    $
+                    k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1, k + 6 \\[3ex]
+                    Assume\;\; k = 0 \\[3ex]
+                    \implies \\[3ex]
+                    0 + 2, 0 - 3, 0 + 4, 0 - 2, 0, 0 - 5, 0 + 3, 0 - 1, 0 + 6 \\[3ex]
+                    2, -3, 4, -2, 0, -5, 3, -1, 6 \\[3ex]
+                    minimum = -5 \\[3ex]
+                    maximum = 6 \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 6 - (-5) \\[3ex]
+                    = 6 + 5 \\[3ex]
+                    = 11
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV7')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV7">
+                    <br>
+                    Let us represent this information in a table. <br>
+                    <table class="w3-center w3-padding">
+                        <tr class="green">
+                            <td>Course</td>
+                            <td>Grade</td>
+                            <td>Point</td>
+                            <td>Credit Hour (CH)</td>
+                            <td>Grade Point, (GP) = Point * Credit Hour</td>
+                        </tr>
+                        <tr>
+                            <td>Algebra</td>
+                            <td>$A$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                            <td>$4 * 4 = 16$</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>$B$</td>
+                            <td>$3$</td>
+                            <td>$3$</td>
+                            <td>$3 * 3 = 9$</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>$B$</td>
+                            <td>$3$</td>
+                            <td>$4$</td>
+                            <td>$3 * 4 = 12$</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>$A$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                            <td>$4 * 4 = 16$</td>
+                        </tr>
+                        <tr>
+                            <td>Chinese</td>
+                            <td>$C$</td>
+                            <td>$2$</td>
+                            <td>$1$</td>
+                            <td>$2 * 1 = 2$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma CH = 16$</td>
+                            <td>$\Sigma GP = 55$</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    $
+                    GPA = \dfrac{\Sigma GP}{\Sigma CH} \\[5ex]
+                    GPA = \dfrac{55}{16} \\[5ex]
+                    GPA = 3.4375 \\[3ex]
+                    GPA \approx 3.44
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) <b>JAMB</b> The range of $4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21$ and $16$ is <br><br>
+                $
+                A.\;\; 23 \\[3ex]
+                B.\;\; 24 \\[3ex]
+                C.\;\; 21 \\[3ex]
+                D.\;\; 16 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV8')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV8">
+                    <br>
+                    $
+                    4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21, 16 \\[3ex]
+                    minimum = 3 \\[3ex]
+                    maximum = 27 \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 27 - 3 \\[3ex]
+                    = 24
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV9')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV9">
+                    <br>
+                    <br>
+                    Based on the solution in that link, $m = 3$ <br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) <b>JAMB</b> The variance of the scores $1, 2, 3, 4, 5$ is <br><br>
+                $
+                A.\;\; 1.2 \\[3ex]
+                B.\;\; 1.4 \\[3ex]
+                C.\;\; 2.0 \\[3ex]
+                D.\;\; 3.0 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV10')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV10">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="w3-padding">$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$-2$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td>$2$</td>
+                            <td>$1$</td>
+                            <td>$2$</td>
+                            <td>$-1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$3$</td>
+                            <td>$1$</td>
+                            <td>$3$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$4$</td>
+                            <td>$1$</td>
+                            <td>$4$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                            <td>$2$</td>
+                            <td>$4$</td>
+                            <td>$4$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 5$</td>
+                            <td>$\Sigma fx = 15$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 10$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{15}{5} \\[5ex]
+                    = 3 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{10}{5 - 1} \\[5ex]
+                    = \dfrac{10}{4} \\[5ex]
+                    = 2.5 \\[3ex]
+                    $
+                    Because the answer is not in the option, assume that the scores are population scores (rather than
+                    sample scores) <br>
+                    In that case, we shall use the population variance <br><br>
+                    $
+                    population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex]
+                    = \dfrac{10}{5} \\[5ex]
+                    = 2 \\[3ex]
+                    = 2.0
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (11.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV11')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV11">
+                    <br>
+                    $
+                    \Sigma x = 5 + 8 + x + 12 + (x + 5) + 10 \\[3ex]
+                    \Sigma x = 35 + x + x + 5 \\[3ex]
+                    \Sigma x = 40 + 2x \\[3ex]
+                    n = 6 \\[3ex]
+                    \bar{x} = 10 \\[3ex]
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    \rightarrow \Sigma x = \bar{x} * n \\[3ex]
+                    40 + 2x = 10(6) \\[3ex]
+                    40 + 2x = 60 \\[3ex]
+                    2x = 60 - 40 \\[3ex]
+                    2x = 20 \\[3ex]
+                    x = \dfrac{20}{2} \\[5ex]
+                    x = 10 \\[3ex]
+                    \underline{Check} \\[3ex]
+                    x = 10 \\[3ex]
+                    x + 5 = 10 + 5 = 15 \\[3ex]
+                    Data\:\:values = 5, 8, 10, 12, 15, 10 \\[3ex]
+                    \Sigma x = 5 + 8 + 10 + 12 + 15 + 10 = 60 \\[3ex]
+                    n = 6 \\[3ex]
+                    \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+                    \bar{x} = \dfrac{60}{6} \\[5ex]
+                    \bar{x} = 10
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (12.) <b>JAMB</b> If the scores of $3$ students in a test are $5, 6$ and $7$, find the standard
+                deviation of their scores. <br><br>
+                $
+                A.\;\; \dfrac{2}{3} \\[5ex]
+                B.\;\; \dfrac{2}{3} \sqrt{3} \\[5ex]
+                C.\;\; \sqrt{\dfrac{2}{3}} \\[5ex]
+                D.\;\; \sqrt{\dfrac{3}{2}} \\[5ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV12')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV12">
+                    <br>
+                    <table class="w3-center">
+                        <tr>
+                            <th class="w3-padding">$x$</th>
+                            <th>$f$</th>
+                            <th>$fx$</th>
+                            <th>$x - \bar{x}$</th>
+                            <th>$(x - \bar{x})^2$</th>
+                            <th>$f(x - \bar{x})^2$</th>
+                        </tr>
+                        <tr>
+                            <td>$5$</td>
+                            <td>$1$</td>
+                            <td>$5$</td>
+                            <td>$-1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td>$6$</td>
+                            <td>$1$</td>
+                            <td>$6$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                            <td>$0$</td>
+                        </tr>
+                        <tr>
+                            <td>$7$</td>
+                            <td>$1$</td>
+                            <td>$7$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                            <td>$1$</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>$\Sigma f = 3$</td>
+                            <td>$\Sigma fx = 18$</td>
+                            <td></td>
+                            <td></td>
+                            <td>$\Sigma f(x - \bar{x})^2 = 2$</td>
+                        </tr>
+                    </table> <br><br>
+                    $
+                    mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+                    = \dfrac{18}{3} \\[5ex]
+                    = 6 \\[3ex]
+                    variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+                    = \dfrac{2}{3 - 1} \\[5ex]
+                    = \dfrac{2}{2} \\[5ex]
+                    = 1 \\[3ex]
+                    standard\;\;deviation = s = \sqrt{s^2} \\[3ex]
+                    = \sqrt{1} \\[3ex]
+                    = 1 \\[3ex]
+                    $
+                    Because the answer is not in the option, assume that the scores are population scores (rather than
+                    sample scores) <br>
+                    In that case, we shall use the population standard deviation <br><br>
+                    $
+                    population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex]
+                    = \dfrac{2}{3} \\[5ex]
+                    population\;\;standard\;\;deviation = \sigma = \sqrt{\sigma^2} \\[3ex]
+                    = \sqrt{\dfrac{2}{3}} ...answer\;\;option \\[5ex]
+                    = \dfrac{\sqrt{2}}{\sqrt{3}} \\[5ex]
+                    = \dfrac{\sqrt{2}}{\sqrt{3}} * \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]
+                    = \dfrac{\sqrt{6}}{3}
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (13.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV13')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV13">
+                    <br>
+                    $
+                    Pass\:\:mark = 5 \\[3ex]
+                    Number\:\:of\:\:students\:\:who\:\:made\:\:4 = 5 \\[3ex]
+                    Number\:\:of\:\:students\:\:who\:\:made\:\:3 = 1 \\[3ex]
+                    Number\:\:of\:\:students\:\:who\:\:made\:\:2 = 3 \\[3ex]
+                    Number\:\:of\:\:students\:\:who\:\:failed\:\:the\:\:test = 5 + 1 + 3 = 9
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (14.) <b>JAMB</b> The weights of $10$ pupils in a class are $15\;kg$, $16\;kg$, $17\;kg$, $18\;kg$,
+                $16\;kg$, $17\;kg$,
+                $17\;kg$, $17\;kg$, $18\;kg$ and $16\;kg$ <br>
+                What is the range of this distribution? <br><br>
+                $
+                A.\;\; 1 \\[3ex]
+                B.\;\; 2 \\[3ex]
+                C.\;\; 3 \\[3ex]
+                D.\;\; 4 \\[3ex]
+                $
+                <button class="solutions" onclick="solutions('solutionMV14')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV14">
+                    <br>
+                    $
+                    15, 16, 17, 18, 16, 17, 17, 17, 18, 16 \\[3ex]
+                    minimum = 15\;kg \\[3ex]
+                    maximum = 18\;kg \\[3ex]
+                    Range = maximum - minimum \\[3ex]
+                    = 18 - 15 \\[3ex]
+                    = 3\;kg
+                    $
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (25.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV25')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV25">
+                    <br>
+                    $
+                    2(4x + 1) = 8 - 3(x - 5) \\[3ex]
+                    8x + 2 = 8 - 3x + 15 \\[3ex]
+                    8x + 3x = 8 + 15 - 2 \\[3ex]
+                    11x = 21 \\[3ex]
+                    x = \dfrac{21}{11} \\[5ex]
+                    $
+                    <u>Check</u>
+                    <table>
+                        <tr>
+                            <td>
+                                $
+                                \underline{LHS} \\[3ex]
+                                2(4x + 1) \\[3ex]
+                                x = \dfrac{21}{11} \\[5ex]
+                                2\left(4 * \dfrac{21}{11} + 1\right) \\[5ex]
+                                2\left(\dfrac{84}{11} + 1\right) \\[5ex]
+                                2\left(\dfrac{84}{11}\ + \dfrac{11}{11}\right) \\[5ex]
+                                2\left(\dfrac{84 + 11}{11}\right) \\[5ex]
+                                2\left(\dfrac{95}{11}\right) \\[5ex]
+                                \dfrac{190}{11}
+                                $
+                            </td>
+                            <td>
+                                $
+                                \underline{RHS} \\[3ex]
+                                8 - 3(x - 5) \\[3ex]
+                                x = \dfrac{21}{11} \\[5ex]
+                                8 - 3\left(\dfrac{21}{11} - 5\right) \\[5ex]
+                                8 - 3\left(\dfrac{21}{11} - \dfrac{55}{11}\right) \\[5ex]
+                                8 - 3\left(\dfrac{21 - 55}{11}\right) \\[5ex]
+                                8 - 3\left(-\dfrac{34}{11}\right) \\[5ex]
+                                8 - -\dfrac{102}{11} \\[5ex]
+                                8 + \dfrac{102}{11} \\[5ex]
+                                \dfrac{88}{11} + \dfrac{102}{11} \\[5ex]
+                                \dfrac{88 + 102}{11} \\[5ex]
+                                \dfrac{190}{11}
+                                $
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (26.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV26')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV26">
+                    <br>
+                    $
+                    4 - m = 2m + 16 \\[3ex]
+                    4 - 16 = 2m + m \\[3ex]
+                    -12 = 3m \\[3ex]
+                    3m = -12 \\[3ex]
+                    m = -\dfrac{12}{3} \\[5ex]
+                    m = -4 \\[3ex]
+                    $
+                    <u>Check</u>
+                    <table>
+                        <tr>
+                            <td>
+                                $
+                                \underline{LHS} \\[3ex]
+                                4 - m \\[3ex]
+                                m = -4 \\[3ex]
+                                4 - (-4) \\[3ex]
+                                4 + 4 \\[3ex]
+                                8
+                                $
+                            </td>
+                            <td>
+                                $
+                                \underline{RHS} \\[3ex]
+                                2m + 16 \\[3ex]
+                                m = -4 \\[3ex]
+                                2(-4) + 16 \\[3ex]
+                                -8 + 16 \\[3ex]
+                                8
+                                $
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (27.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV27')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV27">
+                    <br>
+                    $
+                    4(3p + 2) - 7 = 3(p - 2) \\[3ex]
+                    12p + 8 - 7 = 3p - 6 \\[3ex]
+                    12p - 3p = -6 - 8 + 7 \\[3ex]
+                    9p = -7 \\[3ex]
+                    p = -\dfrac{7}{9} \\[5ex]
+                    $
+                    <u>Check</u>
+                    <table>
+                        <tr>
+                            <td>
+                                $
+                                \underline{LHS} \\[3ex]
+                                4(3p + 2) - 7 \\[3ex]
+                                p = -\dfrac{7}{9} \\[5ex]
+                                4\left(3 * -\dfrac{7}{9} + 2\right) - 7 \\[5ex]
+                                4\left(-\dfrac{21}{9} + \dfrac{18}{2}\right) - 7 \\[5ex]
+                                4\left(\dfrac{-21 + 18}{9}\right) - 7 \\[5ex]
+                                4\left(-\dfrac{3}{9}\right) - 7 \\[5ex]
+                                4\left(-\dfrac{1}{3}\right) - 7 \\[5ex]
+                                -\dfrac{4}{3} - 7 \\[5ex]
+                                -\dfrac{4}{3} - \dfrac{21}{3} \\[5ex]
+                                \dfrac{-4 - 21}{3} \\[5ex]
+                                -\dfrac{25}{3}
+                                $
+                            </td>
+                            <td>
+                                $
+                                \underline{RHS} \\[3ex]
+                                3(p - 2) \\[3ex]
+                                p = -\dfrac{7}{9} \\[5ex]
+                                3\left(-\dfrac{7}{9} - 2\right) \\[5ex]
+                                3\left(-\dfrac{7}{9} - \dfrac{18}{9}\right) \\[5ex]
+                                3\left(\dfrac{-7 - 18}{9}\right) \\[5ex]
+                                3\left(-\dfrac{25}{9}\right) \\[5ex]
+                                -\dfrac{25}{3}
+                                $
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (28.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionMV28')">Show/Hide Answer</button>
+                <div class="result" id="solutionMV28">
+                    <br>
+                    $
+                    4 - m = 2m + 16 \\[3ex]
+                    4 - 16 = 2m + m \\[3ex]
+                    -12 = 3m \\[3ex]
+                    3m = -12 \\[3ex]
+                    m = -\dfrac{12}{3} \\[5ex]
+                    m = -4 \\[3ex]
+                    $
+                    <u>Check</u>
+                    <table>
+                        <tr>
+                            <td>
+                                $
+                                \underline{LHS} \\[3ex]
+                                4 - m \\[3ex]
+                                m = -4 \\[3ex]
+                                4 - (-4) \\[3ex]
+                                4 + 4 \\[3ex]
+                                8
+                                $
+                            </td>
+                            <td>
+                                $
+                                \underline{RHS} \\[3ex]
+                                2m + 16 \\[3ex]
+                                m = -4 \\[3ex]
+                                2(-4) + 16 \\[3ex]
+                                -8 + 16 \\[3ex]
+                                8
+                                $
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+
+    <!-- Footer -->
+    <footer class="bisque w3-center w3-padding-24">
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel"
+            target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img
+                src="images/twitter.png" alt="Follow me on twitter"></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog"
+            target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
+        <div id="google_translate_element"></div>
+        <script>
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-106065945-1' }, 'google_translate_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2018&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.
         </p>
-        
-        <div class="w3-row w3-container">          
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (1.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV1')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV1">
-                        <br>
-                        Student $E$ made the highest test score because the score is $2.00$ standard deviations above the
-                        mean.
-                    </div>
-                </div>
-            </div>
+    </footer>
 
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (2.) <b>JAMB</b> Find the variance of $2, 6, 8, 6, 2$ and $6$ <br><br>
-                    $
-                    A.\;\; \sqrt{5} \\[3ex] 
-                    B.\;\; \sqrt{6} \\[3ex] 
-                    C.\;\; 5 \\[3ex] 
-                    D.\;\; 6 \\[3ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV2')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV2">
-                        <br>
-                        <table class="w3-center">
-                            <tr>
-                                <th class="w3-padding">$x$</th>
-                                <th>$f$</th>
-                                <th>$fx$</th>
-                                <th>$x - \bar{x}$</th>
-                                <th>$(x - \bar{x})^2$</th>
-                                <th>$f(x - \bar{x})^2$</th>
-                            </tr>
-                            <tr>
-                                <td>$2$</td>
-                                <td>$2$</td>
-                                <td>$4$</td>
-                                <td>$-3$</td>
-                                <td>$9$</td>
-                                <td>$18$</td>
-                            </tr>
-                            <tr>
-                                <td>$6$</td>
-                                <td>$3$</td>
-                                <td>$18$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                                <td>$3$</td>
-                            </tr>
-                            <tr>
-                                <td>$8$</td>
-                                <td>$1$</td>
-                                <td>$8$</td>
-                                <td>$3$</td>
-                                <td>$9$</td>
-                                <td>$9$</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>$\Sigma f = 6$</td>
-                                <td>$\Sigma fx = 30$</td>
-                                <td></td>
-                                <td></td>
-                                <td>$\Sigma f(x - \bar{x})^2 = 30$</td>
-                            </tr>
-                        </table> <br><br>
-                        $
-                        mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex] 
-                        = \dfrac{30}{6} \\[5ex] 
-                        = 5 \\[3ex] 
-                        variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex] 
-                        = \dfrac{30}{6 - 1} \\[5ex] 
-                        = \dfrac{30}{5} \\[5ex] 
-                        = 6
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (3.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV3')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV3">
-                        <br>
-                        (a.) A data score is <u>usual</u> if $-2.00 \le z \le 2.00$ <br>
-                        A data value is <u>unusual</u> if the $z-score \lt -2.00$ OR the $z-score \gt 2.00$ <br> 
-                        The lower $z-score$ boundary is $-2.00$ <br>
-                        The upper $z-score$ boundary is $2.00$ <br>
-                        This implies that $-2.00$ and $2.00$ are the $z-scores$ that separate the unusual $IQ$ scores 
-                        from the usual $IQ$ scores <br><br>
-                        (b.) To find the $IQ$ scores (data values), we need to express them in terms of the $z-scores$. <br><br>
-                        $
-                        z = \dfrac{x - \mu}{\sigma} \\[5ex]
-                        \rightarrow x - \mu = z\sigma \\[3ex]
-                        x = z\sigma + \mu \\[3ex]
-                        Lower\:\:IQ\:\:score\:\:boundary = -2(19) + 107 = -38 + 107 = 69 \\[3ex]
-                        Upper\:\:IQ\:\:score\:\:boundary = 2(19) + 107 = 38 + 107 = 145 \\[3ex]
-                        Usual\:\:IQ\:\:scores:\:\: 69 \le IQ \le 145 \\[3ex]
-                        Unusual\:\:IQ\:\:scores:\:\: IQ \lt 69 \:\:OR\:\: IQ \gt 145 \\[3ex]
-                        $
-                        Therefore $69$ and $145$ are the $IQ$ scores that separate the unusual $IQ$ scores 
-                        from the usual $IQ$ scores
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (4.) <b>JAMB</b> Find the range of $\dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3}, \dfrac{8}{9}$ and $\dfrac{4}{3}$ <br><br>
-                    $
-                    A.\;\; \dfrac{4}{3} \\[5ex] 
-                    B.\;\; \dfrac{7}{6} \\[5ex] 
-                    C.\;\; \dfrac{5}{6} \\[5ex] 
-                    D.\;\; \dfrac{3}{4} \\[5ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV4')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV4">
-                        <br>
-                        $
-                        \dfrac{1}{6}, \dfrac{1}{3}, \dfrac{3}{2}, \dfrac{2}{3}, \dfrac{8}{9}, \dfrac{4}{3} \\[5ex] 
-                        LCD\;\;of\;\; 6, 3, 2, 9 = 18 \\[3ex] 
-                        \implies \\[3ex] 
-                        \dfrac{3}{18}, \dfrac{6}{18}, \dfrac{27}{18}, \dfrac{12}{18}, \dfrac{16}{18}, \dfrac{24}{18} \\[5ex] 
-                        maximum = \dfrac{27}{18} \\[5ex] 
-                        minimum = \dfrac{3}{18} \\[5ex] 
-                        Range = maximum - minimum \\[3ex] 
-                        = \dfrac{27}{18} - \dfrac{3}{18} \\[5ex] 
-                        = \dfrac{27 - 3}{18} \\[5ex] 
-                        = \dfrac{24}{18} \\[5ex] 
-                        = \dfrac{4}{3}  
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (5.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV5')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV5">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (6.) <b>JAMB</b> The range of the data $k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1$ and $k + 6$ is <br><br>
-                    $
-                    A.\;\; 6 \\[3ex] 
-                    B.\;\; 8 \\[3ex] 
-                    C.\;\; 10 \\[3ex] 
-                    D.\;\; 11 \\[3ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV6')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV6">
-                        <br>
-                        $
-                        k + 2, k - 3, k + 4, k - 2, k, k - 5, k + 3, k - 1, k + 6 \\[3ex]
-                        Assume\;\; k = 0 \\[3ex] 
-                        \implies \\[3ex] 
-                        0 + 2, 0 - 3, 0 + 4, 0 - 2, 0, 0 - 5, 0 + 3, 0 - 1, 0 + 6 \\[3ex]
-                        2, -3, 4, -2, 0, -5, 3, -1, 6 \\[3ex] 
-                        minimum = -5 \\[3ex] 
-                        maximum = 6 \\[3ex] 
-                        Range = maximum - minimum \\[3ex] 
-                        = 6 - (-5) \\[3ex] 
-                        = 6 + 5 \\[3ex] 
-                        = 11
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-container">          
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (7.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV7')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV7">
-                        <br>
-                        Let us represent this information in a table. <br>
-                        <table class="w3-center w3-padding">
-                            <tr class="green">
-                                <td>Course</td>
-                                <td>Grade</td>
-                                <td>Point</td>
-                                <td>Credit Hour (CH)</td>
-                                <td>Grade Point, (GP) = Point * Credit Hour</td>
-                            </tr>
-                            <tr>
-                                <td>Algebra</td>
-                                <td>$A$</td>
-                                <td>$4$</td>
-                                <td>$4$</td>
-                                <td>$4 * 4 = 16$</td>
-                            </tr>
-                            <tr>
-                                <td>English</td>
-                                <td>$B$</td>
-                                <td>$3$</td>
-                                <td>$3$</td>
-                                <td>$3 * 3 = 9$</td>
-                            </tr>
-                            <tr>
-                                <td>Biology</td>
-                                <td>$B$</td>
-                                <td>$3$</td>
-                                <td>$4$</td>
-                                <td>$3 * 4 = 12$</td>
-                            </tr>
-                            <tr>
-                                <td>Chemistry</td>
-                                <td>$A$</td>
-                                <td>$4$</td>
-                                <td>$4$</td>
-                                <td>$4 * 4 = 16$</td>
-                            </tr>
-                            <tr>
-                                <td>Chinese</td>
-                                <td>$C$</td>
-                                <td>$2$</td>
-                                <td>$1$</td>
-                                <td>$2 * 1 = 2$</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>$\Sigma CH = 16$</td>
-                                <td>$\Sigma GP = 55$</td>
-                            </tr>
-                        </table>
-                        <br><br>
-                        $
-                        GPA = \dfrac{\Sigma GP}{\Sigma CH} \\[5ex]
-                        GPA = \dfrac{55}{16} \\[5ex]
-                        GPA = 3.4375 \\[3ex]
-                        GPA \approx 3.44
-                        $
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (8.) <b>JAMB</b> The range of $4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21$ and $16$ is <br><br>
-                    $
-                    A.\;\; 23 \\[3ex] 
-                    B.\;\; 24 \\[3ex] 
-                    C.\;\; 21 \\[3ex]
-                    D.\;\; 16 \\[3ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV8')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV8">
-                        <br>
-                        $
-                        4, 3, 11, 9, 6, 15, 19, 23, 27, 24, 21, 16 \\[3ex] 
-                        minimum = 3 \\[3ex] 
-                        maximum = 27 \\[3ex] 
-                        Range = maximum - minimum \\[3ex] 
-                        = 27 - 3 \\[3ex] 
-                        = 24 
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (9.) 
-                    
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV9')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV9">
-                        <br>
-                        <br>
-                        Based on the solution in that link, $m = 3$ <br>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (10.) <b>JAMB</b> The variance of the scores $1, 2, 3, 4, 5$ is <br><br>
-                    $
-                    A.\;\; 1.2 \\[3ex] 
-                    B.\;\; 1.4 \\[3ex] 
-                    C.\;\; 2.0 \\[3ex] 
-                    D.\;\; 3.0 \\[3ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV10')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV10">
-                        <br>
-                        <table class="w3-center">
-                            <tr>
-                                <th class="w3-padding">$x$</th>
-                                <th>$f$</th>
-                                <th>$fx$</th>
-                                <th>$x - \bar{x}$</th>
-                                <th>$(x - \bar{x})^2$</th>
-                                <th>$f(x - \bar{x})^2$</th>
-                            </tr>
-                            <tr>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                                <td>$-2$</td>
-                                <td>$4$</td>
-                                <td>$4$</td>
-                            </tr>
-                            <tr>
-                                <td>$2$</td>
-                                <td>$1$</td>
-                                <td>$2$</td>
-                                <td>$-1$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                            </tr>
-                            <tr>
-                                <td>$3$</td>
-                                <td>$1$</td>
-                                <td>$3$</td>
-                                <td>$0$</td>
-                                <td>$0$</td>
-                                <td>$0$</td>
-                            </tr>
-                            <tr>
-                                <td>$4$</td>
-                                <td>$1$</td>
-                                <td>$4$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                            </tr>
-                            <tr>
-                                <td>$5$</td>
-                                <td>$1$</td>
-                                <td>$5$</td>
-                                <td>$2$</td>
-                                <td>$4$</td>
-                                <td>$4$</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>$\Sigma f = 5$</td>
-                                <td>$\Sigma fx = 15$</td>
-                                <td></td>
-                                <td></td>
-                                <td>$\Sigma f(x - \bar{x})^2 = 10$</td>
-                            </tr>
-                        </table> <br><br>
-                        $
-                        mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex] 
-                        = \dfrac{15}{5} \\[5ex] 
-                        = 3 \\[3ex] 
-                        variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex] 
-                        = \dfrac{10}{5 - 1} \\[5ex] 
-                        = \dfrac{10}{4} \\[5ex] 
-                        = 2.5 \\[3ex] 
-                        $
-                        Because the answer is not in the option, assume that the scores are population scores (rather than sample scores) <br>
-                        In that case, we shall use the population variance <br><br>
-                        $
-                        population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex] 
-                        = \dfrac{10}{5} \\[5ex] 
-                        = 2 \\[3ex] 
-                        = 2.0
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (11.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV11')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV11">
-                        <br>
-                        $
-                        \Sigma x = 5 + 8 + x + 12 + (x + 5) + 10 \\[3ex]
-                        \Sigma x = 35 + x + x + 5 \\[3ex]
-                        \Sigma x = 40 + 2x \\[3ex]
-                        n = 6 \\[3ex]
-                        \bar{x} = 10 \\[3ex]
-                        \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
-                        \rightarrow \Sigma x = \bar{x} * n \\[3ex]
-                        40 + 2x = 10(6) \\[3ex]
-                        40 + 2x = 60 \\[3ex]
-                        2x = 60 - 40 \\[3ex]
-                        2x = 20 \\[3ex]
-                        x = \dfrac{20}{2} \\[5ex]
-                        x = 10 \\[3ex]
-                        \underline{Check} \\[3ex]
-                        x = 10 \\[3ex]
-                        x + 5 = 10 + 5 = 15 \\[3ex]
-                        Data\:\:values = 5, 8, 10, 12, 15, 10 \\[3ex]
-                        \Sigma x = 5 + 8 + 10 + 12 + 15 + 10 = 60 \\[3ex]
-                        n = 6 \\[3ex]
-                        \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
-                        \bar{x} = \dfrac{60}{6} \\[5ex]
-                        \bar{x} = 10
-                        $
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (12.) <b>JAMB</b> If the scores of $3$ students in a test are $5, 6$ and $7$, find the standard deviation of their scores. <br><br>
-                    $
-                    A.\;\; \dfrac{2}{3} \\[5ex] 
-                    B.\;\; \dfrac{2}{3} \sqrt{3} \\[5ex] 
-                    C.\;\; \sqrt{\dfrac{2}{3}} \\[5ex] 
-                    D.\;\; \sqrt{\dfrac{3}{2}} \\[5ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV12')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV12">
-                        <br>
-                        <table class="w3-center">
-                            <tr>
-                                <th class="w3-padding">$x$</th>
-                                <th>$f$</th>
-                                <th>$fx$</th>
-                                <th>$x - \bar{x}$</th>
-                                <th>$(x - \bar{x})^2$</th>
-                                <th>$f(x - \bar{x})^2$</th>
-                            </tr>
-                            <tr>
-                                <td>$5$</td>
-                                <td>$1$</td>
-                                <td>$5$</td>
-                                <td>$-1$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                            </tr>
-                            <tr>
-                                <td>$6$</td>
-                                <td>$1$</td>
-                                <td>$6$</td>
-                                <td>$0$</td>
-                                <td>$0$</td>
-                                <td>$0$</td>
-                            </tr>
-                            <tr>
-                                <td>$7$</td>
-                                <td>$1$</td>
-                                <td>$7$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                                <td>$1$</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td>$\Sigma f = 3$</td>
-                                <td>$\Sigma fx = 18$</td>
-                                <td></td>
-                                <td></td>
-                                <td>$\Sigma f(x - \bar{x})^2 = 2$</td>
-                            </tr>
-                        </table> <br><br>
-                        $
-                        mean = \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex] 
-                        = \dfrac{18}{3} \\[5ex] 
-                        = 6 \\[3ex] 
-                        variance = s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex] 
-                        = \dfrac{2}{3 - 1} \\[5ex] 
-                        = \dfrac{2}{2} \\[5ex] 
-                        = 1 \\[3ex] 
-                        standard\;\;deviation = s = \sqrt{s^2} \\[3ex] 
-                        = \sqrt{1} \\[3ex] 
-                        = 1 \\[3ex] 
-                        $
-                        Because the answer is not in the option, assume that the scores are population scores (rather than sample scores) <br>
-                        In that case, we shall use the population standard deviation <br><br>
-                        $
-                        population\;\;variance = \sigma^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f} \\[5ex] 
-                        = \dfrac{2}{3} \\[5ex] 
-                        population\;\;standard\;\;deviation = \sigma = \sqrt{\sigma^2} \\[3ex] 
-                        = \sqrt{\dfrac{2}{3}} ...answer\;\;option \\[5ex] 
-                        = \dfrac{\sqrt{2}}{\sqrt{3}} \\[5ex] 
-                        = \dfrac{\sqrt{2}}{\sqrt{3}} * \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]  
-                        = \dfrac{\sqrt{6}}{3}
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (13.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV13')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV13">
-                        <br>
-                        $
-                        Pass\:\:mark = 5 \\[3ex]
-                        Number\:\:of\:\:students\:\:who\:\:made\:\:4 = 5 \\[3ex]
-                        Number\:\:of\:\:students\:\:who\:\:made\:\:3 = 1 \\[3ex]
-                        Number\:\:of\:\:students\:\:who\:\:made\:\:2 = 3 \\[3ex]
-                        Number\:\:of\:\:students\:\:who\:\:failed\:\:the\:\:test = 5 + 1 + 3 = 9
-                        $
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (14.) <b>JAMB</b> The weights of $10$ pupils in a class are $15\;kg$, $16\;kg$, $17\;kg$, $18\;kg$, $16\;kg$, $17\;kg$, 
-                    $17\;kg$, $17\;kg$, $18\;kg$ and $16\;kg$ <br>
-                    What is the range of this distribution? <br><br>
-                    $
-                    A.\;\; 1 \\[3ex] 
-                    B.\;\; 2 \\[3ex] 
-                    C.\;\; 3 \\[3ex] 
-                    D.\;\; 4 \\[3ex] 
-                    $
-                    <button class="solutions" onclick="solutions('solutionMV14')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV14">
-                        <br>
-                        $
-                        15, 16, 17, 18, 16, 17, 17, 17, 18, 16 \\[3ex]
-                        minimum = 15\;kg \\[3ex] 
-                        maximum = 18\;kg \\[3ex] 
-                        Range = maximum - minimum \\[3ex] 
-                        = 18 - 15 \\[3ex] 
-                        = 3\;kg
-                        $
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (25.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV25')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV25">
-                        <br>
-                        $
-                        2(4x + 1) = 8 - 3(x - 5) \\[3ex]
-                        8x + 2 = 8 - 3x + 15 \\[3ex]
-                        8x + 3x = 8 + 15 - 2 \\[3ex]
-                        11x = 21 \\[3ex]
-                        x = \dfrac{21}{11} \\[5ex]
-                        $ 
-                        <u>Check</u>
-                        <table>
-                            <tr>
-                                <td>
-                                    $
-                                    \underline{LHS} \\[3ex]
-                                    2(4x + 1) \\[3ex]
-                                    x = \dfrac{21}{11} \\[5ex]
-                                    2\left(4 * \dfrac{21}{11} + 1\right) \\[5ex]
-                                    2\left(\dfrac{84}{11} + 1\right) \\[5ex]
-                                    2\left(\dfrac{84}{11}\ + \dfrac{11}{11}\right) \\[5ex]
-                                    2\left(\dfrac{84 + 11}{11}\right) \\[5ex]
-                                    2\left(\dfrac{95}{11}\right) \\[5ex]
-                                    \dfrac{190}{11}
-                                    $
-                                </td>
-                                <td>
-                                    $
-                                    \underline{RHS} \\[3ex]
-                                    8 - 3(x - 5) \\[3ex]
-                                    x = \dfrac{21}{11} \\[5ex]
-                                    8 - 3\left(\dfrac{21}{11} - 5\right) \\[5ex]
-                                    8 - 3\left(\dfrac{21}{11} - \dfrac{55}{11}\right) \\[5ex]
-                                    8 - 3\left(\dfrac{21 - 55}{11}\right) \\[5ex]
-                                    8 - 3\left(-\dfrac{34}{11}\right) \\[5ex]
-                                    8 - -\dfrac{102}{11} \\[5ex]
-                                    8 + \dfrac{102}{11} \\[5ex]
-                                    \dfrac{88}{11} + \dfrac{102}{11} \\[5ex]
-                                    \dfrac{88 + 102}{11} \\[5ex]
-                                    \dfrac{190}{11}
-                                    $                            
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (26.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV26')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV26">
-                        <br>
-                        $
-                        4 - m = 2m + 16 \\[3ex]
-                        4 - 16 = 2m + m \\[3ex]
-                        -12 = 3m \\[3ex]
-                        3m = -12 \\[3ex]
-                        m = -\dfrac{12}{3} \\[5ex]
-                        m = -4 \\[3ex]
-                        $ 
-                        <u>Check</u>
-                        <table>
-                            <tr>
-                                <td>
-                                    $
-                                    \underline{LHS} \\[3ex]
-                                    4 - m \\[3ex]
-                                    m = -4 \\[3ex]
-                                    4 - (-4) \\[3ex]
-                                    4 + 4 \\[3ex]
-                                    8
-                                    $
-                                </td>
-                                <td>
-                                    $
-                                    \underline{RHS} \\[3ex]
-                                    2m + 16 \\[3ex]
-                                    m = -4 \\[3ex]
-                                    2(-4) + 16 \\[3ex]
-                                    -8 + 16 \\[3ex]
-                                    8
-                                    $                            
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row w3-container">
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (27.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV27')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV27">
-                        <br>
-                        $
-                        4(3p + 2) - 7 = 3(p - 2) \\[3ex]
-                        12p + 8 - 7 = 3p - 6 \\[3ex]
-                        12p - 3p = -6 - 8 + 7 \\[3ex]
-                        9p = -7 \\[3ex]
-                        p = -\dfrac{7}{9} \\[5ex]
-                        $ 
-                        <u>Check</u>
-                        <table>
-                            <tr>
-                                <td>
-                                    $
-                                    \underline{LHS} \\[3ex]
-                                    4(3p + 2) - 7 \\[3ex]
-                                    p = -\dfrac{7}{9} \\[5ex]
-                                    4\left(3 * -\dfrac{7}{9} + 2\right) - 7 \\[5ex]
-                                    4\left(-\dfrac{21}{9} + \dfrac{18}{2}\right) - 7 \\[5ex]
-                                    4\left(\dfrac{-21 + 18}{9}\right) - 7 \\[5ex]
-                                    4\left(-\dfrac{3}{9}\right) - 7 \\[5ex]
-                                    4\left(-\dfrac{1}{3}\right) - 7 \\[5ex]
-                                    -\dfrac{4}{3} - 7 \\[5ex]
-                                    -\dfrac{4}{3} - \dfrac{21}{3} \\[5ex]
-                                    \dfrac{-4 - 21}{3} \\[5ex]
-                                    -\dfrac{25}{3}
-                                    $
-                                </td>
-                                <td>
-                                    $
-                                    \underline{RHS} \\[3ex]
-                                    3(p - 2) \\[3ex]
-                                    p = -\dfrac{7}{9} \\[5ex]
-                                    3\left(-\dfrac{7}{9} - 2\right) \\[5ex]
-                                    3\left(-\dfrac{7}{9} - \dfrac{18}{9}\right) \\[5ex]
-                                    3\left(\dfrac{-7 - 18}{9}\right) \\[5ex]
-                                    3\left(-\dfrac{25}{9}\right) \\[5ex]
-                                    -\dfrac{25}{3}
-                                    $                            
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-half w3-container">
-                <div class="w3-topbar w3-padding">
-                    (28.) 
-                    <br><br>
-                    <button class="solutions" onclick="solutions('solutionMV28')">Show/Hide Answer</button>
-                    <div class="result" id="solutionMV28">
-                        <br>
-                        $
-                        4 - m = 2m + 16 \\[3ex]
-                        4 - 16 = 2m + m \\[3ex]
-                        -12 = 3m \\[3ex]
-                        3m = -12 \\[3ex]
-                        m = -\dfrac{12}{3} \\[5ex]
-                        m = -4 \\[3ex]
-                        $ 
-                        <u>Check</u>
-                        <table>
-                            <tr>
-                                <td>
-                                    $
-                                    \underline{LHS} \\[3ex]
-                                    4 - m \\[3ex]
-                                    m = -4 \\[3ex]
-                                    4 - (-4) \\[3ex]
-                                    4 + 4 \\[3ex]
-                                    8
-                                    $
-                                </td>
-                                <td>
-                                    $
-                                    \underline{RHS} \\[3ex]
-                                    2m + 16 \\[3ex]
-                                    m = -4 \\[3ex]
-                                    2(-4) + 16 \\[3ex]
-                                    -8 + 16 \\[3ex]
-                                    8
-                                    $                            
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- END PAGE CONTENT -->
-        
-        
-                        
-        <!-- Footer -->
-        <footer class="bisque w3-center w3-padding-24">
-            <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
-            <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter"></a>
-            <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
-            <div id="google_translate_element"></div>
-            <script>
-                    function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-106065945-1'}, 'google_translate_element');
-                    }
-            </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <p>&copy; 2018&nbsp;<a href="https://www.chukwuemekasamuel.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.</p>
-        </footer>
-
-        <script src="scripts/messages3.js"></script>
-        <script type="text/x-mathjax-config">
+    <script src="scripts/messages3.js"></script>
+    <script type="text/x-mathjax-config">
             MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script>
-        <script async
-                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
-    </body>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
 </html>
